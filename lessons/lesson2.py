@@ -56,7 +56,7 @@ class Anime(Manga):
     def __str__(self):
         return f'название: {self.title}\nавтор: {self.author}\nкадры: {self.drive_image}'
 
-anime = Anime('Naruto','KIsimoto','24')
+anime = Anime('Naruto','Kisimoto','24')
 print(anime.title, anime.author, anime.drive_image)
 anime.prise_book()
 print(Anime.mro())
