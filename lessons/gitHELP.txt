@@ -6,14 +6,14 @@ git remote add origin 'ссылка на ваш репозиторий' - при
 file: .gitignore
 
 *команды которые пишутся каждый раз, когда мы хотим отправить что-то в репозиторий
-git add namefile\.- добаляет в репозиторий ваши файлы
+git add namefile\. - добаляет в репозиторий ваши файлы
 git commit -m 'lesson1' - чекпоинт, сохронение
-git push origin master\main -отправка в ваш репозиторий
+git push origin master\main - отправка в ваш репозиторий
 
 
-полезные команды
-git status | -s -показывает этапы файлов
-git rm --cached namefile: рип файлов в репозитории
+*полезные команды
+git status -s - показывает этапы файлов
+git rm --cached namefile -r - рип файлов в репозитории
 
 
 
