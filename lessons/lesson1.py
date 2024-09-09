@@ -19,8 +19,8 @@
 # class Person:
 #
 #     # метод - функция 'def'
-#     def nameprint(self):
-#         print('мое имя:',self.name)
+#     def namePrint(self):
+#         print('мое имя:', self.name)
 #
 #     # магический метод
 #     def __init__(self, name, age):
@@ -42,8 +42,8 @@
 # print(atabek)
 # print(len(atabek))
 #
-# atabek.nameprint()
-# islam.nameprint()
-# Person.nameprint(atabek)
+# atabek.namePrint()
+# islam.namePrint()
+# Person.namePrint(atabek)
 #
 # print(type(atabek))
