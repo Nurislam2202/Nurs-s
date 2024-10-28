@@ -1,6 +1,3 @@
-# Есть 4 принципов ООП (наследование, полиморфизм, инкапсуляция, абстракция)
-# суперкласс\родительский класс
-
 class Books:
     prise = 350
 
@@ -15,16 +12,6 @@ class Books:
         ...
 
 
-book1 = Books("Преступление и наказание", 'Достоевский')
-
-
-# print(book1)
-#
-# book2=Books("Джамиля","Чингиз Айтматов")
-# print(book2)
-
-
-# дочерний класс
 class Manga(Books):
     prise = 600
 
@@ -36,17 +23,12 @@ class Manga(Books):
     def reverse(self):
         print('читай с права на лево')
 
+    # @staticmethod
+    # def reverse():
+    #     print('читай с права на лево')
+
     def __str__(self):
         return f'{super().__str__()}\n{self.image}\nцена:{self.prise}'
-
-
-manga = Manga('Берсерк', 'Миура')
-# manga.author = 'Кентаро'
-print(manga)
-manga.reverse()
-
-
-# DRY
 
 
 class Anime(Manga):
@@ -60,13 +42,19 @@ class Anime(Manga):
     def __len__(self):
         return self.prise
 
-    def __str__(self):
-        return f'название: {self.title}\nавтор: {self.author}\nкадры: {self.drive_image}'
+
+class Remanga:
+    def __init__(self, manga):
+        self.manga = manga
+
+    def manga_upp(self):
+        print(self.manga, ' улучшена рисовка')
 
 
-anime = Anime('Naruto', 'Kisimoto', '24')
-print(anime.title, anime.author, anime.drive_image)
-anime.prise_book()
-print(Anime.mro())
-print(len(anime))
-print(anime)
+class Newmanga(Books, Manga, Remanga):
+    pass
+
+
+# MRO - порядок выполнения методов
+mymanga = Newmanga('ван пис', 'ода')
+print(Newmanga.mro())

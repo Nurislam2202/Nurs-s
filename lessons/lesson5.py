@@ -1,27 +1,23 @@
-# виртуальное окружение,модули библиотеки фреймворки
-import random,time,sqlite3
-# 1 вид встроенные\внутренний модули
+# Виртуальное окружение, модули, библиотеки, фреймворки
 
+# 1 - вид встроенные\внутренний модули
+# import random, time, sqlite3
 import math
-# print(math.pi)
+print(math.pi)
 
-from math import e,pi,sin,sqrt
-# print(e)
+# вызов отдельных компонентов из модулей
+from math import e, pi, sin, sqrt
+print(e)
 
 
-
-# собвственные модули
-
+# 2 - вид собвственные модули
 from lesson4_2 import Remanga
-import colorama
-print(colorama.Back.LIGHTYELLOW_EX,colorama.Fore.RED)
-
-n=Remanga('огненный кулак')
+n = Remanga('огненный кулак')
 n.manga_upp()
 
 
-# venv
-# внешние модули
+# внешние модули, для использования нужно скачать
+from art import tprint
+tprint('hello')
 
 import colorama
-print('привет')
