@@ -13,7 +13,7 @@ with sql.connect('homework.db') as connection:
     cursor.execute(''' INSERT INTO student (name, surname, year_of_birth, hobby, homework_points)
     VALUES
         ('Fatima', 'Danielbekova', 2006, 'books', 10),
-	    ('Nurislam', 'Uraimov', 2004, 'football', 8),
+        ('Nurislam', 'Uraimov', 2004, 'football', 8),
 	    ('Atabek', 'Esenaliev', 2003, 'geography', 10),
 	    ('Kudaybergen', 'Urbaev', 2004, 'chess', 9),
 	    ('Aisha', 'Asanova', 2001, 'cooking', 10),
